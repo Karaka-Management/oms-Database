@@ -26,13 +26,13 @@ echo $this->getData('nav')->render(); ?>
 <div class="row">
     <div class="col-xs-12">
         <div class="portlet">
-            <div class="portlet-head"><?= $this->getHtml('Templates') ?><i class="fa fa-download floatRight download btn"></i></div>
+            <div class="portlet-head"><?= $this->getHtml('Templates'); ?><i class="fa fa-download floatRight download btn"></i></div>
             <table class="default">
                 <thead>
                 <tr>
-                    <td class="wf-100"><?= $this->getHtml('Name') ?>
-                    <td><?= $this->getHtml('Creator') ?>
-                    <td><?= $this->getHtml('Created') ?>
+                    <td class="wf-100"><?= $this->getHtml('Name'); ?>
+                    <td><?= $this->getHtml('Creator'); ?>
+                    <td><?= $this->getHtml('Created'); ?>
                 <tbody>
                 <?php $count = 0; foreach ($queries as $key => $value) : ++$count;
                 $url = \phpOMS\Uri\UriFactory::build('{/prefix}database/template/single?{?}&id=' . $value->getId()); ?>
