@@ -37,9 +37,9 @@ echo $this->getData('nav')->render(); ?>
                 <?php $count = 0; foreach ($queries as $key => $value) : ++$count;
                 $url         = \phpOMS\Uri\UriFactory::build('{/prefix}database/template/single?{?}&id=' . $value->getId()); ?>
                 <tr>
-                    <td><a href="<?= $url; ?>"><?= $this->printHtml($value->getName()); ?></a>
-                    <td><a href="<?= $url; ?>"><?= $this->printHtml($value->getCreatedBy()->getId()); ?></a>
-                    <td><a href="<?= $url; ?>"><?= $this->printHtml($value->getCreatedAt()->format('Y-m-d H:i:s')); ?></a>
+                    <td><a href="<?= $url; ?>"><?= $this->printHtml($value->name); ?></a>
+                    <td><a href="<?= $url; ?>"><?= $this->printHtml($value->createdBy->getId()); ?></a>
+                    <td><a href="<?= $url; ?>"><?= $this->printHtml($value->createdAt->format('Y-m-d H:i:s')); ?></a>
                 <?php endforeach; ?>
                 <?php if ($count === 0) : ?>
                 <tr><td colspan="5" class="empty"><?= $this->getHtml('Empty', '0', '0'); ?>
