@@ -4,6 +4,7 @@
  *
  * PHP Version 8.0
  *
+ * @package   Modules\Localization
  * @copyright Dennis Eichhorn
  * @license   OMS License 1.0
  * @version   1.0.0
@@ -28,13 +29,13 @@ return ['Database' => [
     'Module'      => 'Module',
     'Modules'     => 'Modules',
     'Name'        => 'Name',
-    'Next'        => '',
+    'Next'        => 'Next',
     'Options'     => 'Options',
     'Permission'  => 'Permission',
     'Permissions' => 'Permissions',
     'Query'       => 'Query',
     'Result'      => 'Result',
-    'Status'      => '',
+    'Status'      => 'Status',
     'Template'    => 'Template',
     'Templates'   => 'Templates',
 ]];
