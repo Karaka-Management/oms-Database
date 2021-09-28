@@ -19,7 +19,7 @@ namespace Modules\Database\tests\Admin;
  */
 class AdminTest extends \PHPUnit\Framework\TestCase
 {
-    protected const MODULE_NAME = 'Database';
+    protected const NAME = 'Database';
 
     protected const URI_LOAD = '';
 

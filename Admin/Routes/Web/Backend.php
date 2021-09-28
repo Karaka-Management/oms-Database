@@ -23,7 +23,7 @@ return [
             'dest'       => '\Modules\Database\Controller\BackendController:viewDatabaseList',
             'verb'       => RouteVerb::GET,
             'permission' => [
-                'module' => BackendController::MODULE_NAME,
+                'module' => BackendController::NAME,
                 'type'   => PermissionType::READ,
                 'state'  => PermissionState::DATABASE,
             ],
@@ -34,7 +34,7 @@ return [
             'dest'       => '\Modules\Database\Controller\BackendController:viewDatabaseCreate',
             'verb'       => RouteVerb::GET,
             'permission' => [
-                'module' => BackendController::MODULE_NAME,
+                'module' => BackendController::NAME,
                 'type'   => PermissionType::CREATE,
                 'state'  => PermissionState::DATABASE,
             ],
@@ -45,7 +45,7 @@ return [
             'dest'       => '\Modules\Database\Controller\BackendController:viewDatabaseResult',
             'verb'       => RouteVerb::GET,
             'permission' => [
-                'module' => BackendController::MODULE_NAME,
+                'module' => BackendController::NAME,
                 'type'   => PermissionType::READ,
                 'state'  => PermissionState::DATABASE,
             ],
@@ -56,7 +56,7 @@ return [
             'dest'       => '\Modules\Database\Controller\BackendController:viewDatabaseTemplate',
             'verb'       => RouteVerb::GET,
             'permission' => [
-                'module' => BackendController::MODULE_NAME,
+                'module' => BackendController::NAME,
                 'type'   => PermissionType::READ,
                 'state'  => PermissionState::TEMPLATE,
             ],
