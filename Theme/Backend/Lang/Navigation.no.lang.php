@@ -13,7 +13,7 @@
 declare(strict_types=1);
 
 return ['Navigation' => [
-    'Create'   => 'Create',
+    'Create'   => 'Skape',
     'Database' => 'Database',
-    'List'     => 'List',
+    'List'     => 'Liste',
 ]];
