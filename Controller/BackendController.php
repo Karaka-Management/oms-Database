@@ -42,7 +42,7 @@ final class BackendController extends Controller
      * @since 1.0.0
      * @codeCoverageIgnore
      */
-    public function viewDatabaseList(RequestAbstract $request, ResponseAbstract $response, $data = null) : RenderableInterface
+    public function viewDatabaseList(RequestAbstract $request, ResponseAbstract $response, mixed $data = null) : RenderableInterface
     {
         $view = new View($this->app->l11nManager, $request, $response);
         $view->setTemplate('/Modules/Database/Theme/Backend/database-list');
@@ -63,7 +63,7 @@ final class BackendController extends Controller
      * @since 1.0.0
      * @codeCoverageIgnore
      */
-    public function viewDatabaseCreate(RequestAbstract $request, ResponseAbstract $response, $data = null) : RenderableInterface
+    public function viewDatabaseCreate(RequestAbstract $request, ResponseAbstract $response, mixed $data = null) : RenderableInterface
     {
         $view = new View($this->app->l11nManager, $request, $response);
         $view->setTemplate('/Modules/Database/Theme/Backend/database-generator');
@@ -84,7 +84,7 @@ final class BackendController extends Controller
      * @since 1.0.0
      * @codeCoverageIgnore
      */
-    public function viewDatabaseResult(RequestAbstract $request, ResponseAbstract $response, $data = null) : RenderableInterface
+    public function viewDatabaseResult(RequestAbstract $request, ResponseAbstract $response, mixed $data = null) : RenderableInterface
     {
         $view = new View($this->app->l11nManager, $request, $response);
         $view->setTemplate('/Modules/Database/Theme/Backend/database-query-result');
