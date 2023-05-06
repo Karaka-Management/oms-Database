@@ -36,10 +36,10 @@ echo $this->getData('nav')->render(); ?>
                     <td><?= $this->getHtml('Created'); ?>
                 <tbody>
                 <?php $count = 0; foreach ($queries as $key => $value) : ++$count;
-                $url         = \phpOMS\Uri\UriFactory::build('database/template/single?{?}&id=' . $value->getId()); ?>
+                $url         = \phpOMS\Uri\UriFactory::build('database/template/single?{?}&id=' . $value->id); ?>
                 <tr>
                     <td><a href="<?= $url; ?>"><?= $this->printHtml($value->name); ?></a>
-                    <td><a href="<?= $url; ?>"><?= $this->printHtml($value->createdBy->getId()); ?></a>
+                    <td><a href="<?= $url; ?>"><?= $this->printHtml($value->createdBy->id); ?></a>
                     <td><a href="<?= $url; ?>"><?= $this->printHtml($value->createdAt->format('Y-m-d H:i:s')); ?></a>
                 <?php endforeach; ?>
                 <?php if ($count === 0) : ?>
