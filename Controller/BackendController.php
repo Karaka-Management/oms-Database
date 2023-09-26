@@ -92,4 +92,25 @@ final class BackendController extends Controller
 
         return $view;
     }
+
+    /**
+     * Routing end-point for application behaviour.
+     *
+     * @param RequestAbstract  $request  Request
+     * @param ResponseAbstract $response Response
+     * @param mixed            $data     Generic data
+     *
+     * @return RenderableInterface
+     *
+     * @since 1.0.0
+     * @codeCoverageIgnore
+     */
+    public function viewDatabaseTemplate(RequestAbstract $request, ResponseAbstract $response, mixed $data = null) : RenderableInterface
+    {
+        $view = new View($this->app->l11nManager, $request, $response);
+        $view->setTemplate('/Modules/Database/Theme/Backend/database-template');
+        $view->data['nav'] = $this->app->moduleManager->get('Navigation')->createNavigationMid(1005601001, $request, $response);
+
+        return $view;
+    }
 }
