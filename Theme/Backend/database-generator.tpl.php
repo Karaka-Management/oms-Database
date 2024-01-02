@@ -17,15 +17,15 @@ echo $this->data['nav']->render(); ?>
 <div class="tabview tab-2">
     <div class="box">
         <ul class="tab-links">
-            <li><label for="c-tab-1"><?= $this->getHtml('General'); ?></label></li>
-            <li><label for="c-tab-2"><?= $this->getHtml('Modules'); ?></label></li>
-            <li><label for="c-tab-3"><?= $this->getHtml('Elements'); ?></label></li>
-            <li><label for="c-tab-4"><?= $this->getHtml('Fixdata'); ?></label></li>
-            <li><label for="c-tab-5"><?= $this->getHtml('Calculation'); ?></label></li>
-            <li><label for="c-tab-6"><?= $this->getHtml('Dataformat'); ?></label></li>
-            <li><label for="c-tab-7"><?= $this->getHtml('Headlines'); ?></label></li>
-            <li><label for="c-tab-8"><?= $this->getHtml('Permissions'); ?></label></li>
-            <li><label for="c-tab-9"><?= $this->getHtml('Options'); ?></label></li>
+            <li><label for="c-tab-1"><?= $this->getHtml('General'); ?></label>
+            <li><label for="c-tab-2"><?= $this->getHtml('Modules'); ?></label>
+            <li><label for="c-tab-3"><?= $this->getHtml('Elements'); ?></label>
+            <li><label for="c-tab-4"><?= $this->getHtml('Fixdata'); ?></label>
+            <li><label for="c-tab-5"><?= $this->getHtml('Calculation'); ?></label>
+            <li><label for="c-tab-6"><?= $this->getHtml('Dataformat'); ?></label>
+            <li><label for="c-tab-7"><?= $this->getHtml('Headlines'); ?></label>
+            <li><label for="c-tab-8"><?= $this->getHtml('Permissions'); ?></label>
+            <li><label for="c-tab-9"><?= $this->getHtml('Options'); ?></label>
         </ul>
     </div>
     <div class="tab-content">
@@ -100,7 +100,7 @@ echo $this->data['nav']->render(); ?>
 <div class="row">
     <div class="col-xs-12">
         <div class="box wf-100">
-            <table class="default">
+            <table class="default sticky">
                 <caption><?= $this->getHtml('Result'); ?><i class="g-icon end-xs download btn">download</i></caption>
                 <thead>
                 <tbody>
