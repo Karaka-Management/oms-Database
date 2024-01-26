@@ -16,8 +16,8 @@ declare(strict_types=1);
  * @var \phpOMS\Views\View $this
  */
 
-$queries      = [];
-$footerView   = new \phpOMS\Views\PaginationView($this->l11nManager, $this->request, $this->response);
+$queries    = [];
+$footerView = new \phpOMS\Views\PaginationView($this->l11nManager, $this->request, $this->response);
 $footerView->setTemplate('/Web/Templates/Lists/Footer/PaginationBig');
 $footerView->setPages(\count($queries) / 25);
 $footerView->setPage(1);
@@ -36,7 +36,7 @@ echo $this->data['nav']->render(); ?>
                     <td><?= $this->getHtml('Created'); ?>
                 <tbody>
                 <?php $count = 0; foreach ($queries as $key => $value) : ++$count;
-                $url         = \phpOMS\Uri\UriFactory::build('database/template/single?{?}&id=' . $value->id); ?>
+                $url         = \phpOMS\Uri\UriFactory::build('database/template/view?{?}&id=' . $value->id); ?>
                 <tr>
                     <td><a href="<?= $url; ?>"><?= $this->printHtml($value->name); ?></a>
                     <td><a href="<?= $url; ?>"><?= $this->printHtml($value->createdBy->id); ?></a>
