@@ -39,7 +39,7 @@ echo $this->data['nav']->render(); ?>
                 $url         = \phpOMS\Uri\UriFactory::build('database/template/view?{?}&id=' . $value->id); ?>
                 <tr>
                     <td><a href="<?= $url; ?>"><?= $this->printHtml($value->name); ?></a>
-                    <td><a href="<?= $url; ?>"><?= $this->printHtml($value->createdBy->id); ?></a>
+                    <td><a href="<?= $url; ?>"><?= $value->createdBy->id; ?></a>
                     <td><a href="<?= $url; ?>"><?= $this->printHtml($value->createdAt->format('Y-m-d H:i:s')); ?></a>
                 <?php endforeach; ?>
                 <?php if ($count === 0) : ?>
