@@ -16,7 +16,7 @@ declare(strict_types=1);
  * @var \phpOMS\Views\View $this
  */
 
-$queries    = [];
+$queries = [];
 
 echo $this->data['nav']->render(); ?>
 <div class="row">
